@@ -1,0 +1,21 @@
+- read(file1)
+  - p1 = readFile(file1)
+  - p1.then
+    - q1 = read(file2)
+      - p2 = readFile(file2)
+      - p2.then
+        - q2 = read(file3)
+          - p3 = readFile(file3)
+          - p3.then
+          - return data
+      - return q2
+  - return q1
+
+# then flow will be reverse
+  p3.then(data)
+  p2.then((contents) => {
+    q2 = contents; return q2
+  })
+  .p1.then((contents) => {
+    q1 = contents; return q1
+  })

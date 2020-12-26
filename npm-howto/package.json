@@ -1,0 +1,13 @@
+{
+  "name": "@spareslant/npm-howto",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "repository": "http://something.com",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {}
+}
